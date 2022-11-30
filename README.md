@@ -24,7 +24,7 @@ Before writing an code, review the requirements and make an ERD. Review your ERD
 
 This is the general layout provided by your product owner. Please follow this guideline for your project's layout.
 
-![wireframe for project](./images/wireframe.png)
+![wireframe for project](./images/wireframe.jpg)
 
 ## Workflow animation
 
