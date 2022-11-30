@@ -11,6 +11,7 @@ This is an advanced project that covers:
 - ERD's and many-to-many relationships
 - State
 - Event handling
+- Custom events
 - Advanced CSS
 - Googling skills
 
@@ -18,7 +19,7 @@ There are multiple concepts covered in this project which have not been covered 
 
 Some tickets have been made for you, but you will need to create more, breaking down the requirements into smaller chunks. This is where you get to practice your algorithmic and analytical thinking.
 
-Before writing an code, review the requirements and make an ERD. Review your ERD with an instructor before making changes to the database.
+Before writing any code, review the requirements and make an ERD. Review your ERD with an instructor before making changes to the database.
 
 ## Wireframe
 
@@ -36,9 +37,9 @@ This animation shows you the basic behavior of the application.
 List Generator is an app that allows a user to generate a shopping list by selecting items from a specific store.
 
 - The user will be able to see all the item categories on the page.
-- The user will have the ability to select the store they wish to create a shopping list for from a dropdown.
+- The user will have the ability to select a store from a dropdown.
 - Once a store is chosen, the items from the selected store will be displayed on the page under the correct categories.
-- The user will have the ability to select the items they wish to build their shopping list.
+- The user will have the ability to select the items they want to build their shopping list.
 - When the user clicks on the "Make list" button, the list will display at the bottom of the page with the store name and the date it was created.
 - When the user clicks on the list, it will expand, displaying the contents of the list. Clicking on the list name again will collapse the list.
 
