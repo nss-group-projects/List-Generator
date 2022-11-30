@@ -8,7 +8,7 @@ export const ListDetails = (listId) => {
 
   const items = getItems()
   return `
-  <div id="details--${listId}" class="list-details" style='display: none'>
+  <div id="details--${listId}" class="list-details collapsed expand-contract">
     <ul>
       ${listItems
         .map((listItem) => {

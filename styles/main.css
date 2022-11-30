@@ -1,14 +1,3 @@
-/* Color Pallet:
-  #F4F1DE
-  #E07A5F
-  #3D405B
-  #81B29A
-  #F2CC8F */
-
-body {
-  background-color: #F4F1DE;
-}
-
 #container {
   display: flex;
   flex-direction: column;
@@ -25,8 +14,7 @@ body {
   border-radius: 7px;
   font-family: monospace;
   font-size: 1rem;
-  background-color: #81B29A;
-  color: #F2CC8F;
+  box-shadow: 1px 1px 1px grey;
   cursor: pointer;
 }
 
@@ -44,14 +32,14 @@ body {
 
 .category-name {
   align-self: center;
-  background-color: #E07A5F;
   padding: 1rem;
   width: 80%;
   text-align: center;
-  font-family: 'Righteous', cursive;
+  font-family: system-ui;
   color: #3D405B;
   border-radius: 22px;
-  border: 5px dotted #3D405B;
+  border: 1px solid black;
+  box-shadow: 3px 3px 4px grey;
 }
 
 .items-container {
@@ -62,51 +50,14 @@ body {
   font-size: 1rem;
 }
 
-input {
-  /* Add if not using autoprefixer */
-  -webkit-appearance: none;
-  /* Remove most all native input styles */
-  appearance: none;
-  /* For iOS < 15 */
-  background-color: #F4F1DE;
-  /* Not removed via appearance */
-  margin: 0;
-
-  font: inherit;
-  color: #3D405B;
-  width: 1.15em;
-  height: 1.15em;
-  border: 0.15em solid #3D405B;
-  border-radius: 0.15em;
-  transform: translateY(-0.075em);
-
-  display: grid;
-  place-content: center;
-}
-
-input::before {
-  content: "";
-  width: 0.65em;
-  height: 0.65em;
-  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-  transform: scale(0);
-  transform-origin: bottom left;
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em #3D405B;
-  /* Windows High Contrast Mode */
-  background-color: #F4F1DE;
-}
-
-input:checked::before {
-  transform: scale(1);
-}
-
 label {
-  line-height: 1.1;
-  display: grid;
-  grid-template-columns: 1em auto;
-  gap: 1em;
-  margin-bottom: 0.5em;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+input[type=checkbox] {
+  margin-right: 1rem;
+  accent-color: black;
 }
 
 #button-container {
@@ -119,11 +70,10 @@ label {
   border-radius: 7px;
   font-family: monospace;
   font-size: 1rem;
-  background-color: #81B29A;
-  border: 0px;
-  color: #F2CC8F;
-  box-shadow: #3d405b 3px 3px 4px;
+  background-color: white;
+  border: 1px solid;
   cursor: pointer;
+  box-shadow: 1px 1px 1px grey;
 }
 
 #create-list:active {
@@ -132,20 +82,32 @@ label {
 
 #list-header {
   margin-left: 2rem;
-  font-family: 'Righteous', cursive;
-  color: #3D405B
+  font-family: system-ui;
+  color: #3D405B;
 }
 
 .list {
   margin-left: 2rem;
   font-family: monospace;
   font-size: 1.25rem;
-  margin-bottom: 1rem;
   cursor: pointer;
+  margin-bottom: 1rem
 }
 
 .list-details {
   font-family: monospace;
-  font-size: 1.25em;
   margin-left: 1rem;
+}
+
+.details-container {
+  overflow: hidden;
+}
+
+.expand-contract {
+  margin-top: -100%;
+  transition: all 0.5s;
+}
+
+.expand-contract.expanded {
+  margin-top: 0;
 }
