@@ -24,11 +24,12 @@ Before writing an code, review the requirements and make an ERD. Review your ERD
 
 This is the general layout provided by your product owner. Please follow this guideline for your project's layout.
 
-TODO: Insert wireframe image
+![wireframe for project](./images/wireframe.png)
 
 ## Workflow animation
 
 This animation shows you the basic behavior of the application.
+![](./images/workflow.gif)
 
 ## Application overview
 
